@@ -847,7 +847,7 @@ image_source="auto"
 # Source Mage, Sparky, Star, SteamOS, Sulin, SunOS, SwagArch, t2, Tails, TeArch, TorizonCore, Trisquel, Twister,
 # Ubuntu, Ubuntu Budgie, Ubuntu Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway,
 # Ubuntu Touch, Ubuntu Unity, Ubuntu-GNOME, ubuntu_old02, Ultramarine Linux, Univalent, Univention, Uos,
-# UrukOS, uwuntu, Vanilla, Venom, VNux, Void, VzLinux, wii-linux-ngx, Windows, Windows 10, Windows 11, Windows 95,
+# UrukOS, uwuntu, Vanilla, Venom, VNux, Void, Vylen, VzLinux, wii-linux-ngx, Windows, Windows 10, Windows 11, Windows 95,
 # XFerience, Xray_OS, Xubuntu, yiffOS, Zorin have ascii logos.
 
 # NOTE: arch, dragonfly, Fedora, LangitKetujuh, nixos, redhat, Ubuntu have 'old' logo variants, use
@@ -1933,6 +1933,7 @@ get_packages() {
               has kagami  && dir "/var/lib/kagami/pkgs/*"
               has cave    && dir "/var/db/paludis/repositories/cross-installed/*/data/*/ \
                                  /var/db/paludis/repositories/installed/data/*/"
+              has emerald && dir "/var/lib/emerald/db/*"
               shopt -u nullglob
               }
 
@@ -6028,7 +6029,7 @@ ASCII:
                                 Source Mage, Sparky, Star, SteamOS, Sulin, SunOS, SwagArch, t2, Tails, TeArch, TorizonCore, Trisquel, Twister,
                                 Ubuntu, Ubuntu Budgie, Ubuntu Cinnamon, Ubuntu Kylin, Ubuntu MATE, Ubuntu Studio, Ubuntu Sway,
                                 Ubuntu Touch, Ubuntu Unity, Ubuntu-GNOME, ubuntu_old02, Ultramarine Linux, Univalent, Univention, Uos,
-                                UrukOS, uwuntu, Vanilla, Venom, VNux, Void, VzLinux, wii-linux-ngx, Windows, Windows 10, Windows 11, Windows 95,
+                                UrukOS, uwuntu, Vanilla, Venom, VNux, Void, Vylen, VzLinux, wii-linux-ngx, Windows, Windows 10, Windows 11, Windows 95,
                                 XFerience, Xray_OS, Xubuntu, yiffOS, Zorin have ascii logos.
 
 
@@ -13881,6 +13882,50 @@ ${c1}
     :--::--------:     .-------::---:
    :----------::         .:----------
   
+EOF
+        ;;
+
+        "vylen_small")
+            set_colors 2
+            read -rd '' ascii_data <<'EOF'
+      ${c1}:~!!!~. .~!!!~:
+    :~!!!!!~. .~!!!!!~:
+  :~!!!!!!!~. .~!!!!!!!~:
+:~!!!!!!!!!~. .~!!!!!!!!!~:
+!!!!!!!!!!!!. .!!!!!!!!!!!!
+~~~~~~~~~~~^   ^~~~~~~~~~~~
+
+~~~~~~~~~~~^   ^~~~~~~~~~~~
+!!!!!!!!!!!!   !!!!!!!!!!!!
+:~!!!!!!!!!!:.:!!!!!!!!!!~:
+  :~!!!!!!!!!!!!!!!!!!!~:
+    :~!!!!!!!!!!!!!!!~:
+      :~!!!!!!!!!!!~:
+EOF
+        ;;
+
+        "Vylen"*)
+            set_colors 2
+            read -rd '' ascii_data <<'EOF'
+          ${c1}.^^^^^^:    :^^^^^^.
+        .:^^^^^^^:    :^^^^^^^:.
+      .^^^^^^^^^^:    :^^^^^^^^^^.
+    .^^^^^^^^^^^^:    :^^^^^^^^^^^^.
+  .^^^^^^^^^^^^^^:    :^^^^^^^^^^^^^^.
+.^^^^^^^^^^^^^^^^:    :^^^^^^^^^^^^^^^^:
+^^^^^^^^^^^^^^^^^:    :^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^~:    :~^^^^^^^^^^^^^^^^
+..................    ..................
+
+..................    ..................
+^^^^^^^^^^^^^^^^~:    :~^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^:    :^^^^^^^^^^^^^^^^^
+.^^^^^^^^^^^^^^^^:    :^^^^^^^^^^^^^^^^.
+  .^^^^^^^^^^^^^^^::::^^^^^^^^^^^^^^^.
+    .^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^.
+      .^^^^^^^^^^^^^^^^^^^^^^^^^^.
+        .:^^^^^^^^^^^^^^^^^^^^:.
+          .^^^^^^^^^^^^^^^^^^.
 EOF
         ;;
 
